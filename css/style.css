@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+.logo {
+    width: 200px;
+    cursor: pointer;
+    
+}
+   
+header {
+background-color: rgb(207, 248, 146);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+li {
+    display: inline-block;
+    font: size 1.5em; ;
+    text-transform: uppercase;
+    font-weight: bold;
+    list-style: none; 
+    }
+    
+
+h1 {
+color: #ffc099;
+font-size: 50px;
+text-align: center;
+}
+
+p {
+color:black;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a{
+    text-decoration: none;
+    color:black
+}
+ 
+.navPcipal {
+    padding: 10px;
+   text-align: center;
+ 
+}
+
+.mainImg{
+    
+width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+    
+}
+body {
+    background-color: gainsboro;
+
+}
+
+.parrafo {
+    text-align: left;
+    color:brown
+}
+
+h2 {
+    text-align: center;
+    color:#f2f2f2;
+}
+
+h3 {
+    font-size: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    text-align: center;
+    color: black
+   
+}   
+
+.container {
+    background-color: olivedrab;
+ width: 500px;
+ height: 100px;
+border: solid cornflowerblue 2px;
+
+/* esto lo hice para aplicar bow-modeling pero iría un carrusel de fotos */
+
+}
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.redes-sociales a {
+    margin-right: 10px; /* Espacio entre los íconos de redes sociales */
+    color: brown; /* Color del texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+}
+
+@media (max-width: 500px) {
+.parrafo1 {
+    color:cadetblue;
+}
+}
+
+
+@media (max-width: 500px) {
+    .parrafo {
+        color:blueviolet;
+    }
+    }
