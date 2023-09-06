@@ -5,47 +5,40 @@
 
 .logo {
     width: 200px;
-    cursor: pointer;
-    
+    cursor: pointer; 
 }
    
 header {
 background-color: beige ;
 display: flex;
-justify-content: space-between;
+justify-content: space-around;
 align-items: center;
 }
 
 li {
     display: inline-block;
-    font: size 1.5em; ;
+    font: size 1.5 rem;
     text-transform: uppercase;
-    font-weight: bold;
     list-style: none; 
     }
     
 
 h1 {
-color: maroon;
+color: gray;
 font-size: 50px;
 text-align: center;
 }
 
-p {
-color:black;
-    font-size: 15px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
 a{
     text-decoration: none;
-    color:maroon;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:grey;
+    font-family: sans-serif;
+
 }
- 
 .navPcipal {
     padding: 10px;
    text-align: center;
- font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ font-family: sans-serif;
 }
 
 .mainImg{
@@ -81,14 +74,6 @@ h3 {
     margin-right: 20px;
   }
 
-  .tituloPcipal {
-    margin: 0;
-   align-content: center;
-    font-size:20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-font-weight: bold;
-color: maroon;
-  }
 
   .container1 {
     display: flex;
@@ -97,18 +82,29 @@ color: maroon;
   }
 
 
+  /*  CAROUSEL*/
+
+  .slide {
+    margin-top: 10px;
+  }
+
+.slide img {
+   max-width: 100%;
+   height: 80vh;
+}
+
 
 footer {
-    background-color: #f2f2f2;
+    background-color: gray;
     padding: 20px;
     text-align: center;
 }
 
 
 .redes-sociales a {
-    margin-right: 10px; /* Espacio entre los íconos de redes sociales */
-    color: maroon; /* Color del texto */
-    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 20px; 
+    color:azure; 
+    text-decoration: none; 
 }
 
 /* GRID Y FLEX */
@@ -144,12 +140,14 @@ margin: 3rem 0;
     font-weight: bold;
     text-align: center;
     margin-bottom: 10px;
+    
+
 }
 
 .precioPieza {
     font-size: 26px;
     font-weight: bold;
-    color: maroon;
+    color: grey;
     text-align: center;
     
 }
@@ -175,29 +173,111 @@ transition: all .5s;
 transform-origin: left;
 }
 
+/* contacto */
 
 
+form {
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px ;
+    text-align:center;
+    margin: auto;
+    width: 250px;
+   background: url(../img/fondoform.jpg);
+   margin-top: 20px;
+   margin-bottom: 40px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+text-align: left;
+}
 
 
+label{
+    font-family: sans-serif;
+    color:gray;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input, textarea {
+    padding: 17px 25px;
+    border-radius: 25px;
+    background-color: antiquewhite;
+    border: 2px solid rosybrown;
+    color:grey ;
+    outline:none ;  
+    margin-bottom: 20px;
+}
+
+.btn {
+    font-size: 20px;
+    color:grey;
+    border: 0;
+    background-color:beige;
+    cursor: pointer;
+} 
+
+.btn:hover {
+opacity: 0.7;
+}
+   
+/* HOME */
+
+.seccion {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 20px;
+    background-color: whitesmoke; 
+  }
+  
+  .imagen {
+
+    padding: 10px;
+    max-width: 100%;
+  }
 
 
+  .textoDescriptivo {
+    flex: 1; 
+    color: gray;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ margin-right: 30px;
+ margin-left: 30px;
+}
+
+.home{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h4 {
+   
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: brown;
+font-size: 40px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.mapa {
+    width: 100%;
+  height: 200px; 
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
 
 
 /* RESPONSIVE */
-@media (max-width: 500px) {
-    .parrafo1 {
-        color: cadetblue;
-    }
-
-    .parrafo {
-        color: blueviolet;
-    }
-
+@media (max-width: 600px) {
+   
     .logo {
-        display: none;
-    }
-
-    nav {
         display: none;
     }
 
@@ -209,5 +289,15 @@ transform-origin: left;
 @media (max-width: 580px) {
     h1 {
         display: none;
+    }
+
+    .imagen {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .producto {
+        flex: 0 1 calc(50% - 20px);
     }
 }
